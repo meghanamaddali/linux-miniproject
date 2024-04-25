@@ -1,0 +1,32 @@
+Fifth Step:
+
+1. Login as ‘user2’ and perform below
+su user2
+
+2. Create file “/dir1/f2”
+sudo touch /dir1/f2
+
+3. Delete /dir6
+sudo rm -rf /dir6
+
+4. Delete /dir8
+sudo rm -rf /dir8
+
+5. Replace the “DevOps” text to “devops” in the /f3 file without using  editor.
+sudo sed -i 's/DevOps/devops/g' /f3
+cat f3 
+
+6. Using Vi-Editor copy the line1 and paste 10 times in the file /f3.
+vi f3
+1G (to go to line 1)
+yy (yank means copy)
+10pp (paste 10 times)
+wq (save and quit)
+
+7. Search for the pattern “Engineer” and replace with “engineer” in the file /f3 using single command.
+:%s/Engineer/engineer/g (%s for searching all the occurances and % is for replacing and g for making 
+sure if it applied for all not only the first one)
+:wq
+
+8. Delete /f3
+sudo rm -rf /f3

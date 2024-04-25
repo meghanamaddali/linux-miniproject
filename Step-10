@@ -1,0 +1,19 @@
+Tenth Step:
+
+1. Logins as ‘root’ user and perform below
+sudo su 
+
+2. Delete users – ‘user1, user2, user3, user4, user5’
+sudo userdel username
+
+3. Delete groups – app, aws, database, devops
+sudo groupdel groupname
+
+4. Delete home directories  of all users ‘user1, user2, user3, user4, user5’ if any exists still.
+non exists
+
+5. Unmount /data file system
+umount /dev/xvdb
+
+6. Delete /data directory
+rm -rf /data 

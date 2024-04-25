@@ -1,0 +1,30 @@
+Fourth Step: 
+
+1. Login as ‘user1’ and perform below
+su user1
+
+2. Create directory – “/home/user2/dir1”
+sudo mkdir /home/user2/dir1
+
+3. Change to “/dir2/dir1/dir2/dir10” directory and create file “/opt/dir14/dir10/f1” using relative path method.
+
+cd /dir2/dir1/dir2/dir10
+cd ../../../../opt/dir14/dir10/
+touch f1 
+
+4. Move the file from “/opt/dir14/dir10/f1” to  user1 home directory
+sudo mv /opt/dir14/dir10/f1 /home/user1
+ls /home/user1
+
+5. Delete the directory recursively “/dir4”
+sudo rm -Rf /dir4
+
+6. Delete all child files and directories under “/opt/dir14” using single command.
+sudo rm -rf /opt/dir14/*
+
+7. Write this text “Linux assessment for an DevOps Engineer!! Learn with Fun!!” to the /f3 file and save it.
+sudo chown user2:user2 /f3
+vi f3
+i
+write text
+ecs :wq
