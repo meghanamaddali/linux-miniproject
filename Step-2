@@ -1,0 +1,28 @@
+Second Step
+
+1. Login as user1 and perform below
+--commands:
+su user1
+
+When i was trying to create add a user through user1 it was saying i was'nt added in sudoers so do this:
+sudo su from ec2user
+
+sudo visudo
+
+Under this add the user line:
+## Allows people in group wheel to run all commands
+%wheel  ALL=(ALL)       ALL
+user1   ALL=(ALL:ALL) ALL
+
+
+2. Create users and set passwords – user4, user5
+--commands:
+sudo useradd user4
+sudo passwd iamstrong97
+
+sudo useradd user5
+sudo passwd iamstrong97
+
+3. Create Groups – app, database
+--commands: 
+sudo groupadd app

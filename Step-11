@@ -1,0 +1,3 @@
+Eleventh Step: 
+
+Login to AWS and detach EBS volume to the EC2 Instance and delete the volume and then terminate EC2 instance.

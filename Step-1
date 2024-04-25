@@ -1,0 +1,44 @@
+First Step: 
+
+1. Login to the server as super user and perform below
+Name: linux
+2. Create users and set passwords – user1, user2, user3
+--commands:
+sudo useradd username
+sudo passwd username
+
+--Users and passwords
+user1 & iamstrong
+user2 & iamstrong
+user3 & iamstrong
+
+3. Create Groups – devops, aws
+--commands:
+sudo groupadd groupname
+
+4. Change primary group of user2, user3 to ‘devops’ group
+--commands:
+sudo usermod -g new_primary_group username
+
+sudo usermod -g devops user2
+
+5. Add ‘aws’ group as secondary group to the ‘user1’
+--commands:
+sudo usermod -aG groupname username
+-aG is append to group
+
+sudo usermod -aG aws user1
+
+6. Create the file and directory structure shown in the above diagram.
+--commands:
+mkdir
+touch
+
+7. Change group of /dir1, /dir7/dir10, /f2 to “devops” group
+--commands:
+sudo chgrp devops /dir1 /dir7/dir10 /f2
+
+
+8. Change ownership of /dir1, /dir7/dir10, /f2 to “user1” user.
+--commands:
+sudo chown user1 /dir1 /dir7/dir10 /f2

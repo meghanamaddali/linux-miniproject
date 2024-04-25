@@ -1,0 +1,27 @@
+Sixth Step:
+
+1. Login as ‘root’ user and perform below
+sudo su 
+
+2. Search for the file name ‘f3’ in the server and list all absolute  paths where f3 file is found.
+find / -type f -name f3 2>/dev/null
+/dir2/dir1/dir2/f3
+/dir7/dir10/f3
+
+find /: Start the search from the root directory /.
+-type f: Search for files.
+-name "f3": Match the file name exactly as "f3".
+2>/dev/null: Redirect error messages (such as permission denied) to /dev/null to suppress them.
+
+3. Show the count of the number of files in the directory ‘/’
+ls -l / | grep "^-" | wc -l
+
+ls -l /: Lists files in long format in the root directory /.
+grep "^-": Filters only regular files (not directories or other types of files). In the long format listing, regular files start with -.
+wc -l: Counts the number of lines.
+
+4. Print last line of the file ‘/etc/passwd’
+tail -n 1 /etc/passwd
+
+tail : prints the last part of a file 
+-n 1 : output of last line 

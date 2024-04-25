@@ -1,0 +1,21 @@
+Third Step: 
+
+1. Login as ‘user4’ and perform below
+su user4
+
+2. Create directory – /dir6/dir4
+mkdir /dir6/dir4
+
+3. Create file – /f3
+touch /f3
+
+4. Move the file from “/dir1/f1” to “/dir2/dir1/dir2”
+Change the permissions of the dirs from sudo by using 
+chown -R user4:user4 /dir1
+chown -R user4:user4 /dir2
+
+then login to user4 and use this command 
+mv /dir1/f1 /dir2/dir1/dir2
+
+5. Rename the file ‘/f2′ to /f4’
+sudo mv /f2 /f4
